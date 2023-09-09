@@ -50,7 +50,7 @@ nav ul{
   margin-top:5%;
   font-size: 50px;
 }
-.container{
+.pcontainer{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,7 +94,7 @@ img {
 }
 
 .project-name {
-  position: absolute;
+  position: absolute !important;
   top: 0;
   left: 0;
   width: 100%;
@@ -137,4 +137,20 @@ footer{
   background-color:white;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
+}
+.button a{
+  background: black;
+}
+.button a i{
+  background-color: white;
+  color: black;
+  font-size: 40px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
 }
