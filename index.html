@@ -6,6 +6,9 @@
   <title>Portfolio</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>         
 </head>
 <body>
   <div class="video-container">
@@ -15,11 +18,88 @@
     <nav>
       <h1>Portfolio</h1>
       <ul>
-        <li><a  href="#projects">Projects.</a></li>
         <li><a href="#about">About.</a></li>
+        <li><a  href="#projects">Projects.</a></li> 
         <li><a href="">Contact.</a></li>
       </ul>
     </nav>
+  </div>
+  <div class="about" id="about">
+    <div class="abouttxt">
+      <h2>About Me</h2>
+      <p>
+        I'm a versatile technologist with a strong foundation in programming languages such as <strong>Java</strong>, <strong>Python</strong>, <strong>JavaScript</strong>, and <strong>PHP</strong>. My expertise spans full-stack web development using technologies like <strong>Node.js</strong>, <strong>React.js</strong>, <strong>Angular</strong>, <strong>Express</strong>, and <strong>Vue.js</strong>. I'm also proficient in database management, including <strong>MySQL</strong> and <strong>MongoDB</strong>.
+      </p>
+      <p>
+        I have a passion for artificial intelligence, machine learning, deep learning, neural networks, and natural language processing (<strong>NLP</strong>). I apply these AI concepts to tackle real-world challenges.
+      </p>
+      <p>
+        My skills extend to UX/UI design, ensuring that my projects not only function flawlessly but also offer exceptional user experiences.
+      </p>
+      <p>
+        In the realm of app development, I specialize in Android app development using <strong>Kotlin</strong> and leverage the power of <strong>Google Firebase</strong> for backend development, ensuring seamless and robust mobile experiences.
+      </p>
+      <p>
+        My knowledge also encompasses AR/VR technologies, and I excel in building immersive experiences using <strong>WebXR</strong>.
+      </p>
+      <p>
+        My drive for continuous learning and innovation fuels my desire to create meaningful and impactful solutions that leave a lasting mark in the world of technology.
+      </p>
+    </div>
+    <div class="wrapper">
+      <div class="carousel owl-carousel">
+        <!-- Logo 1 -->
+        <div class="card">
+          <img src="media/java.png" alt="Logo 1">
+        </div>
+        <!-- Logo 2 -->
+        <div class="card">
+          <img src="media/python.png" alt="Logo 2">
+        </div>
+        <!-- Logo 3 -->
+        <div class="card">
+          <img src="media/js.png" alt="Logo 3">
+        </div>
+        <div class="card">
+          <img src="media/node.png" alt="Logo 5">
+        </div>
+        <!-- Logo 4 -->
+        <div class="card">
+          <img src="media/ex.png" alt="Logo 4">
+        </div>
+        <!-- Logo 5 -->
+        <div class="card">
+          <img src="media/angular.png" alt="Logo 5">
+        </div>
+        <div class="card">
+          <img src="media/react.png" alt="Logo 5">
+        </div>
+        <div class="card">
+          <img src="media/vuejs.png" alt="Logo 5">
+        </div>
+        <div class="card">
+          <img src="media/php.png" alt="Logo 5">
+        </div>
+        <div class="card">
+          <img src="media/mysql.png" alt="Logo 5">
+        </div>
+        <div class="card">
+          <img src="media/aws.png" alt="Logo 5">
+        </div>
+        <div class="card">
+          <img src="media/mongo.png" alt="Logo 5">
+        </div>
+        <div class="card">
+          <img src="media/kotlin.png" alt="Logo 5">
+        </div>
+        <div class="card">
+          <img src="media/Firebase_Logo.png" alt="Logo 5">
+        </div>
+        <div class="card">
+          <img src="media/WebXR.webp" alt="Logo 5">
+        </div>
+      </div>
+    </div>  
   </div>
   <div class="pcontainer">
     <div class="projects" id="projects">
@@ -61,17 +141,8 @@
       </div>
     </div>
   </div>
-  <div class="about" id="about">
-    <div>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic nulla dolor nobis. Repellat sequi quisquam, vero nemo cupiditate culpa. Adipisci natus ut quibusdam deserunt cum neque iste alias, dolore impedit?
-    Deserunt culpa perferendis accusamus quisquam magni cumque doloremque cum quasi nihil non excepturi nulla dolores unde fugit voluptatem ab ratione possimus porro, maxime dolorum consequatur esse. Maxime quasi itaque necessitatibus?
-    Qui illum rem impedit reprehenderit aspernatur officia ut maxime illo veniam non culpa, possimus facere sequi dolore expedita consectetur dolorem ad tenetur molestias ex cupiditate. Cupiditate libero ipsum nobis ullam!
-    Ea neque voluptate obcaecati qui quo, ab ipsam accusantium, optio iure porro nihil quasi temporibus totam ipsum a cum repellat vel aliquid facere sit iste cupiditate quos impedit? Placeat, obcaecati.
-    Cumque beatae veniam, alias mollitia soluta sequi eaque iusto sed. Rerum porro id officia perspiciatis veritatis dolor laborum eligendi unde odit eveniet hic soluta adipisci nihil est corporis, cupiditate repudiandae.
-    </div>
-  </div>
   <div class="button">
-    <a href="#"><i class="bi bi-arrow-up"></i></a>
+    <a href="#"  id="scrollToTop"><i class="bi bi-arrow-up"></i></a>
   </div>
   <footer>
     © Dileep Sai Manthena
