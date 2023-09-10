@@ -66,13 +66,14 @@ nav ul{
   display: grid;
   grid-template-columns: auto auto auto;
   row-gap: 50px;
+  column-gap: 50px;
   padding: 50px;
   height: max-content;
   -ms-grid-column-align: center;
 }
 .projectdiv {
   height: 300px;
-  width: 450px;
+  width: 100%;
   position: relative;
   display: block;
   overflow: hidden;
@@ -123,6 +124,7 @@ img {
   flex-direction: column;
   align-items: center;
   border-radius: 20px;
+  justify-content: center;
 }
 .about .abouttxt{
   padding: 50px;
@@ -180,6 +182,7 @@ footer{
   margin: 0 auto;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 .card {
@@ -209,6 +212,7 @@ footer{
   backdrop-filter: blur(20px);
   gap: 200px;
   height: 400px;
+  width: 100%;
 }
 .profiletxt{
   font-size: 50px;
@@ -254,3 +258,255 @@ footer{
     transform: translateY(0);
   }
 }
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  nav ul {
+    font-size: 16px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  .about {
+    margin-top: 5%; /* Adjust as needed for spacing from the navigation */
+    margin-bottom: 5%; /* Adjust as needed for spacing from the projects section */
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .about div {
+    padding: 10px;
+  }
+  /* Responsive styles for mobile screens continued */
+
+/* Styles for the video container */
+.video-container {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+}
+
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Adjust margins for the projects section */
+.projects {
+  margin-top: 5%; /* Adjust as needed */
+  margin-bottom: 10%; /* Adjust as needed */
+  background-color: rgba(139, 157, 169, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr; /* Single column layout on mobile */
+  row-gap: 20px;
+}
+
+.projectdiv {
+  height: auto;
+  width: 100%;
+}
+
+.project-item {
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive styles for the profile section */
+.profiletxt {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  padding: 20px;
+  margin-top: 10%; /* Adjust margin-top as needed */
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.static-txt {
+  font-size: 24px; /* Increase font size for better visibility on mobile */
+}
+
+.dynamic-txts {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px; /* Adjust margin-top as needed */
+}
+
+.dynamic-txts li {
+  display: none; /* Hide all list items by default */
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Styles for the scroll-to-top button (adjust as needed) */
+.button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  display: none;
+}
+
+.button a {
+  background: black;
+  height: 50px;
+  width: 50px;
+  text-decoration: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button a i {
+  background: none;
+  color: white;
+  font-size: 30px;
+}
+.carousel {
+  display: flex;
+  margin: 0 auto;
+  
+  align-items: center;
+  width: 100px;
+}
+
+.card {
+  text-align: center;
+  margin: 20px 0;
+  background: #fff; 
+  padding: 20px;
+  width: 50px;
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease; 
+}
+owl-carousel .owl-stage-outer{
+  overflow: visible;
+}
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .about {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .about div {
+    padding: 10px;
+  }
+
+  .video-container {
+    height: 50vh;
+  }
+  .projects {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    padding: 10px;
+    grid-template-columns: 1fr;
+  }
+
+  .projectdiv {
+    height: auto;
+  }
+
+  .project-name {
+    font-size: 16px;
+  }
+
+  .button a {
+    height: 40px;
+    width: 40px;
+  }
+
+  .button a i {
+    font-size: 20px;
+  }
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30%;
+    background-color: rgba(183, 198, 209, 0.5);
+    backdrop-filter: blur(20px);
+    padding-top: 20px;
+    border-radius: 20px;
+    text-align: center;
+    height: fit-content;
+    gap: 10px;
+  }
+
+  .profile img {
+    width: 200px;
+    border-radius: 20%; /* Adjust border-radius for a circular profile image */
+  }
+
+  .profiletxt {
+    font-size: 24px;
+    height: 150px;
+  }
+
+  .dynamic-txts {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+  }
+
+  .dynamic-txts li {
+    display: none;
+  }
+
+  .dynamic-txts li {
+    display: block;
+    animation: fadeInOut 4s linear infinite;
+  }
+
+  @keyframes fadeInOut {
+    0%, 100% {
+      opacity: 0;
+      transform: translateY(5px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+/* Responsive styles for the profile section on mobile screens */
+/* Responsive styles for the profile section on mobile screens */
+
+

@@ -25,23 +25,12 @@ scrollToTopButton.addEventListener('click', () => {
 
 $(document).ready(function () {
   $(".carousel").owlCarousel({
-    items: 3, // Show three logos at a time
+    items: 4,
     margin: 20,
     loop: true,
     autoplay: true,
     autoplayTimeout: 2000,
     autoplayHoverPause: true,
-    responsive: {
-      0: {
-        items: 1, // Show one logo on smaller screens
-      },
-      600: {
-        items: 2, // Show two logos on medium screens
-      },
-      1000: {
-        items: 3, // Show three logos on large screens
-      },
-    },
   });
 });
 $(document).ready(function () {
