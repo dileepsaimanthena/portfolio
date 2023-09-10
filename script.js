@@ -44,3 +44,23 @@ $(document).ready(function () {
     },
   });
 });
+$(document).ready(function () {
+  // Initialize variables
+  var currentIndex = 0;
+  var items = $("#dynamic-texts li");
+  
+  // Function to show the current li and hide the rest
+  function showItem(index) {
+    items.hide();
+    items.eq(index).show();
+  }
+  
+  // Initial display
+  showItem(currentIndex);
+  
+  // Interval to switch to the next li
+  setInterval(function () {
+    currentIndex = (currentIndex + 1) % items.length;
+    showItem(currentIndex);
+  }, 4000); // Adjust the interval time (in milliseconds) as needed
+});
