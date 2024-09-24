@@ -137,7 +137,7 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color:white;
+  background-color:rgb(53, 175, 215);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
 }
@@ -406,6 +406,15 @@ owl-carousel .owl-stage-outer{
   overflow: visible;
 }
 }
+.contact {
+  background-color: rgba(183, 198, 209, 0.5);
+  backdrop-filter: blur(20px);
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 50px; /* Adjust as needed */
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 24px;
